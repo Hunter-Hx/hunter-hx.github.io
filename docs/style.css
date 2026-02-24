@@ -1036,3 +1036,18 @@ body {
   color: #d4af37;
   font-weight: bold;
   }
+.header {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 25px;
+  }
+.logo-wrapper {
+  display: inline-block;
+  padding: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+}
