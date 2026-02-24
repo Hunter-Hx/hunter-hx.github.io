@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unpopular Opinion | Hunter Creatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="poems.html">Poems</a>
+  <a href="bible.html">Bible Verses</a>
+  <a href="humor.html">Humor</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+</nav>
+
+<main>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <h1>Unpopular Opinion</h1>
+
+  <article class="card">
+    <p>
+      UNPOPULAR; I don't think your life has to have a purpose, or a grand ambition; I think it's okey to just wander through life finding interesting things to do until you die. 
+    </p>
+  </article>
+<article class="card">
+    <p>
+      UNPOPULAR; People don’t change because they understand — they change because staying the same becomes more painful than changing..
+    </p>
+</article>
+ <article class="card">
+    <p>
+      UNPOPULAR; “Follow your passion” is bad advice if it doesn’t pay your bills.
+    </p>
+ </article>
+
+</main>
+
+<footer>
+  <p>© 2026 Hunter Creatives</p>
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    // Save preference
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  // Load saved theme on page load
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+</script>
+
+
+</body>
+</html>
