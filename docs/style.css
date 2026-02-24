@@ -684,18 +684,6 @@ body {
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-.ramadhan-card h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #ffd700;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-}
-
-.ramadhan-card p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
 .dua {
   margin-top: 25px;
   font-size: 1.5rem;
