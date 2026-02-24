@@ -1268,3 +1268,42 @@ body {
   background: white !important;
   color: black !important;
   }
+.full-article {
+  display: none;
+  margin-top: 20px;
+}
+
+.locked-content {
+  margin-top: 15px;
+}
+
+.locked-content button {
+  padding: 8px 15px;
+  background: #d4af37;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 25px;
+  color: white;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+    }
