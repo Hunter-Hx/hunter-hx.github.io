@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter Five — THE VOID</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="../stories.html">Stories</a>
+  <a href="../the-void.html">Back to Novel</a>
+</nav>
+
+<main>
+  <article class="card chapter">
+    <h1>Chapter Five</h1>
+    <h3>The ...</h3>
+    <p class="story-meta">
+  Fiction • 5 min read • Updated Jan 2026
+</p>
+<button class="read-mode-btn" onclick="toggleReadMode()">
+  📖 Reading Mode
+</button>
+
+
+    <p>
+      Paste your chapter text here.<br><br>
+      Keep paragraphs short for readability.<br><br>
+      Let the story breathe.
+    </p>
+  </article>
+
+  <div class="chapter-nav">
+    <a href="the-void-ch4.html"> ← Previous Chapter </a>
+    <a href="the-void-ch6.html">Next Chapter →</a>
+  </div>
+</main>
+<script>
+function toggleReadMode() {
+  document.body.classList.toggle("reading");
+}
+</script>
+<script>
+  const unlocked = false;
+
+  if (!unlocked) {
+    document.body.innerHTML = `
+      <main style="text-align:center; margin-top:100px;">
+        <h1>🔒 Chapter Locked</h1>
+        <p>This chapter will be released Soon</p>
+      </main>
+    `;
+  }
+</script>
+</body>
+</html>
