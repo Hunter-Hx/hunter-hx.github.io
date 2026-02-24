@@ -30,22 +30,24 @@
 <main>
   <section class="articles">
 
-    <div class="article-card locked">
-      <h2>The Silence Within</h2>
-      <p class="preview">
-        Silence is not the absence of sound, but the presence of meaning...
-      </p>
+  <div class="article-card">
+    <h2>The Silence Within</h2>
 
-      <div class="lock-overlay">
-        <div class="lock-content">
-          <p>🔒 Premium Article</p>
-          <button onclick="unlockArticle(this)">Unlock to Read</button>
-        </div>
-      </div>
+    <div class="locked-content">
+      <p>This article is protected.</p>
+      <button onclick="showPasswordBox()">Enter Password</button>
     </div>
 
+    <div class="full-article" id="fullArticle">
+      <p>
+        Silence is not the absence of sound, but the presence of meaning.
+        In the quietest moments, we hear the loudest truths...
+      </p>
+    </div>
+
+  </div>
+
   </section>
-</main>
 
 <script src="script.js"></script>
 
