@@ -33,12 +33,10 @@
 
 <body>
 
-<header class="hero">
+<header class="header">
 
   <div class="top-bar">
-    <div class="menu-icon" onclick="toggleMenu()">
-      &#9776;
-    </div>
+    <div class="menu-icon" onclick="openMenu()">&#9776;</div>
 
     <div class="brand-area">
       <img src="images/logo.png" class="logo" alt="Hunter Creatives Logo">
@@ -46,18 +44,18 @@
     </div>
   </div>
 
-  <div class="hero-text">
-    <div class="gold-line"></div>
-    <p class="tagline">...the loud silence</p>
-    <p class="subtext">Where silence speaks.</p>
-  </div>
-
-  <div id="mobileMenu" class="mobile-menu">
-    <a href="#">Articles</a>
-    <a href="#">Join Our Writing</a>
-    <a href="#">Community</a>
-  </div>
 </header>
+
+<!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+  <span class="close-btn" onclick="closeMenu()">&times;</span>
+  <a href="#">Articles</a>
+  <a href="#">Join Our Writing</a>
+  <a href="#">Community</a>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
 
 <section class="explore">
