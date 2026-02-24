@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poems - Short reflections</title>
+  <meta name="description" content="A collection of poems and short reflections written as moments, fragments, and meditations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="opinion.html">Unpopular Opinions</a>
+  <a href="bible.html">Bible</a>
+  <a href="humour.html">Humour & Jokes</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+  
+</nav>
+
+<main>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  
+  <h1>Poems</h1>
+
+  <article class="card">
+    <div class="poem">
+    <main>
+  <p class="quote">Click a title to read.</p>
+
+  <details class="poem">
+    <summary><strong>After Everything</strong></summary>
+    <p>
+      At night, when the tie is hung,<br>
+      And the T-shirts lie scattered,<br>
+      Socks on the floor,<br>
+      The kitchen still warm with dinner.<br>
+
+       When the wigs are removed,<br> 
+       And the makeup is washed,<br>
+      The shelf in disarray,<br>
+      And the vest is on,<br>
+      The TV is muted and the assignment is are done,<br>
+      The kids half-asleep and the doors locked,<br>
+      That's when 'love' happens-<br>
+       Or whatever they call it.<br>
+            By <em>Hunter</em>
+    </p>
+  </details>
+
+  <details class="poem">
+    <summary><strong>Frozen Embrace</strong></summary>
+    <p>
+Wake up boy!<br>
+Dig that grave<br>
+And release your friends to the waiting angels,,<br>
+Is not bad to be lonely, you see?,<br>
+The world will not pamper you boy!<br>
+
+Boy!  Take that shovel<br>
+Mix that sand and gravel<br> 
+And get messy in it,<br>
+Question your flaws, critique with honesty<br> 
+And if need be, surrender,<br>
+The world is not your mom, boy!<br>
+
+Boy! This is your toll,<br>
+Sweat all day long,<br>
+Endure hunger if provisions fail,<br>
+Boy! Future is for you,<br>
+You gotta be tough boy!<br>
+
+Boy! Walk the streets,<br>
+Cry and get eliminated,<br>
+The World has no use for cry babies,<br>
+Boy! Your tears better be viscous!<br>
+      By <em>Hunter</em>
+    </p>
+  </details>
+
+  <details class="poem">
+    <summary><strong>Unfinished Prayer</strong></summary>
+    <p>
+      I prayed with broken sentences,<br>
+      faith stitched with doubt.<br>
+      Heaven listened--
+        By <em>Hunter</em>
+    </p>
+  </details>
+ <details class="poem">
+   <summary><strong>In A Dream Today</strong></summary>
+  <p>
+    
+In a dream today,<br>
+You wore no veil.<br>
+I could see your ears<br>
+And it was not pierced.<br>
+In a dream today,<br>
+You wore no glasses<br>
+I could see your naked eye<br> 
+I could tell their color.<br>
+And it was the first time I got to believe<br> 
+That man is not a machine<br>
+But can be ignited by the sparkles in your eyes.<br>
+In a dream today,<br>
+You wore no shoes.<br>
+I could see your small feet<br>
+They're that of the Egyptian goddess.<br>
+In a dream today.<br>
+You wore no gloves.<br>
+I could see your slimy fingers.<br>
+And I could tell they fell cold.<br>
+It was the first time I got to believe.<br>
+That man is not an energy bulb.<br>
+But can be turned on by the flicky touch of your cold hands<br>
+    By <em>Kweku Crystal</em>
+  </p> 
+ </details>
+      
+     <details class="poem">
+    <summary><strong>A Song For Two</strong></summary>
+    <p>
+     My fingers bleed out anytime I try to play guitar.<br>
+Its strings are too thin to strum.<br>
+So the melody in my head never gets out.<br>
+Here I am with a bow tuning love from the heart with my new violin.<br>
+This is why I would not leave the Lute family.<br>
+They made me miss the person I used to be.<br>
+So tonight<br>
+I deserve the rhythm of my music in pure silence.<br><br>
+Tonight my bandaged fingers will strum<br>
+The agony that travels from the tongue of the wrong mind<br>
+Crush your heart, and journey through your veins and hold it venom.<br>
+If it leaves your thoughts paralyzed<br>
+Then I'll be your healer.<br>
+To unveil your true desire.<br>
+Thus, "Solitude is not the doom you yearn for."<br><br>
+Her warm touch hurts like the truth.<br>
+Her smile is as beautiful as the sunset.<br>
+It's scary when she's silent.<br>
+Like a nightmare, her absence keeps me awake.<br>
+So I'll send you a bird to sing a song for two.<br>
+And when you're back, I'll play for you to stay.<br>
+        By <em>Kweku Crystal</em>
+    </p>
+                                   </details>
+
+  <details class="poem">
+    <summary><strong>Ashes</strong></summary>
+    <p>
+      I’ve seen his dark side before.<br>
+When his demons rise,<br>
+He knocks of every gold in his path like garbage.<br>
+He hunts the nights but I choose to wait<br>
+At the end of every dawn<br>
+Just to see this phoenix rise from his ashes.<br>
+        By <em>Kweku Crystal</em>
+    </p>
+  </details>
+</main>
+
+</body>
+</html>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    // Save preference
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  // Load saved theme on page load
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+</script>
+
