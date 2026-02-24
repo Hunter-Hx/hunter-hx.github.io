@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories — Fiction and Works in Progress</title>
+  <meta name="description" content="Original fiction, works in progress, and long-form stories exploring memory, loss, and meaning.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="poems.html">Poems</a>
+  <a href="bible.html">Bible</a>
+  <a href="humor.html">Humour amd Jokes</a>
+  <a href="opinion.html">Unpopular Opinions</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+  
+</nav>
+
+<main>
+<a href="index.html" class="back-link">← Back to Home</a>
+
+ <article class="card story" data-id="the-red-shadow">
+
+  <h2>
+    <a href="the-red-shadow.html">
+      THE RED SHADOW 
+    </a>
+  </h2>
+
+  <p><strong>Type:</strong> Fiction</p>
+  <p><strong>Status:</strong> Completed</p>
+  <p><strong>Year:</strong> 2026</p>
+
+  <p>
+    ....the stupid child. 
+  </p>
+ </article>
+   
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+ <article class="card story" data-id="still-counting-the-dead">
+
+  <h2>
+    <a href="still-counting-the-dead.html">
+      STILL COUNTING THE DEAD
+    </a>
+  </h2>
+
+  <p><strong>Type:</strong> Fiction</p>
+  <p><strong>Status:</strong> Work in Progress <em>Coming 5th February</em></p>
+  <p><strong>Year:</strong> 2026</p>
+
+  <p>
+    ****
+  </p>
+
+</article>
+ 
+
+  <article>
+
+  <h2>
+    <a href="the-void.html">
+      THE VOID
+    </a>
+  </h2>
+
+  <p><strong>Type:</strong> Fiction</p>
+  <p><strong>Status:</strong> Launched</p>
+  <p><strong>Year:</strong> 2026</p>
+
+  <p>
+    ...this is not a story about redemption
+  </p>
+<div class="story-layout">
+
+    </div>
+
+</div>
+  
+  </article>
+  <h2>
+    <a href="safe-heaven.html">
+      SAFE HEAVEN
+    </a>
+  </h2>
+
+  <p><strong>Type:</strong> Fiction</p>
+  <p><strong>Status:</strong> Work in Progress <em>Coming Soon</em></p>
+  <p><strong>Year:</strong> 2026</p>
+
+  <p>
+    ****
+  </p>
+</article>
+</main>
+  
+<script>
+  document.querySelectorAll(".story").forEach(story => {
+    const id = story.dataset.id;
+    const btn = story.querySelector(".like-btn");
+    const countEl = story.querySelector(".like-count");
+
+    let liked = localStorage.getItem(id) === "true";
+    let count = parseInt(localStorage.getItem(id + "-count")) || 0;
+
+    countEl.textContent = count;
+
+    btn.addEventListener("click", () => {
+      liked = !liked;
+
+      if (liked) {
+        count++;
+        localStorage.setItem(id, "true");
+      } else {
+        count--;
+        localStorage.removeItem(id);
+      }
+
+      localStorage.setItem(id + "-count", count);
+      countEl.textContent = count;
+    });
+  });
+</script>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark") ? "dark" : "light"
+    );
+  }
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+</script>
+
+</body>
+</html>
