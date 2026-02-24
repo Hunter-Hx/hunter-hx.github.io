@@ -1214,3 +1214,11 @@ body {
   font-size: 20px;
   letter-spacing: 2px;
   }
+body {
+  margin: 0;
+  background: #000;
+}
+
+main {
+  padding-top: 80px;
+  }
