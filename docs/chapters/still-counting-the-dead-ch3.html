@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter Three — STILL COUNTING THE DEAD</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="../stories.html">Stories</a>
+  <a href="../story-counting-the-dead.html">Back to Novel</a>
+</nav>
+
+<main>
+  <article class="card chapter">
+    <h1>Chapter Three</h1>
+    <h3>Still Counting...</h3>
+    <p class="story-meta">
+  Fiction • 5 min read • Updated Jan 2026
+</p>
+<button class="read-mode-btn" onclick="toggleReadMode()">
+  📖 Reading Mode
+</button>
+
+
+    <p>
+      Paste your chapter text here.<br><br>
+      Keep paragraphs short for readability.<br><br>
+      Let the story breathe.
+    </p>
+  </article>
+
+  <div class="chapter-nav">
+    <a href="still-counting-the-dead-ch2.html"> ← Previous Chapter </a>
+    <a href="still-counting-the-dead-ch4.html">Next Chapter →</a>
+  </div>
+</main>
+<script>
+function toggleReadMode() {
+  document.body.classList.toggle("reading");
+}
+</script>
+<script>
+  const unlocked = false;
+
+  if (!unlocked) {
+    document.body.innerHTML = `
+      <main style="text-align:center; margin-top:100px;">
+        <h1>🔒 Chapter Locked</h1>
+        <p>This chapter will be released soon.</p>
+        <a href="stories.html">Back to stories</a>
+      </main>
+    `;
+  }
+</script>
+
+</body>
+</html>
