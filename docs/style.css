@@ -1,0 +1,1038 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BASE (LIGHT MODE) ---------- */
+body {
+  font-family: "Georgia", serif;
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ---------- NAV ---------- */
+nav {
+  background: #111;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Dark mode button */
+.dark-btn {
+  margin-left: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: #ffffff;
+  color: #222;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 4rem;
+}
+
+/* ---------- QUOTES ---------- */
+.quote {
+  font-style: italic;
+  border-left: 4px solid #ffd369;
+  padding-left: 1rem;
+  color: #444;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark nav {
+  background: #000;
+}
+
+body.dark nav a {
+  color: #ddd;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+body.dark .quote {
+  border-left-color: #888;
+  color: #ccc;
+}
+
+/* ---------- TRANSITIONS ---------- */
+body,
+nav,
+.card {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+.site-tagline {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+main {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ---------- READING MODE ---------- */
+.reading {
+  max-width: 720px;
+  margin: 3rem auto;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+}
+/* ---------- MOBILE POLISH ---------- */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    margin: 2rem auto;
+    padding: 0 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .story-text p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+  }
+}
+a:focus,
+button:focus {
+  outline: 2px dashed #ffd369;
+  outline-offset: 4px;
+}
+body {
+  background: linear-gradient(180deg, #f4f6f8 0%, #ffffff 100%);
+}
+
+body.dark {
+  background: linear-gradient(180deg, #0f0f0f 0%, #121212 100%);
+}
+.ad-placeholder {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  border: 1px dashed #ddd;
+}
+/* ---------- COOKIE NOTICE ---------- */
+.cookie-notice {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #f2f2f2;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+.cookie-notice a {
+  color: #ffd369;
+  text-decoration: none;
+}
+
+.cookie-notice button {
+  background: #ffd369;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body.dark .cookie-notice {
+  background: #1a1a1a;
+}
+.daily-quote {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+  border-left: 4px solid #444;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.daily-quote h2 {
+  margin-bottom: 15px;
+  font-style: normal;
+}
+
+#quote-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#quote-author {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.poem p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+/* ---------- POEMS LAYOUT ---------- */
+
+.poem-card {
+  background: #fffdf9;
+  border-left: 8px solid #ffd369;
+}
+
+.poem-title {
+  text-align: center;
+  font-size: 2.0rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.8px;
+}
+
+.poem-body {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  white-space: pre-line;
+  text-align: center;
+  color: #333;
+}
+/* ---------- FEATURED CONTENT ---------- */
+.featured h2 {
+  color: #b8860b;
+  margin-bottom: 0.5rem;
+}
+
+.featured h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+/* ---------- BOOK READING STYLE ---------- */
+.chapter {
+  max-width: 650px;
+  margin: 4rem auto;
+  font-family: "Georgia", serif;
+}
+
+.chapter h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.chapter-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+/* Paragraph spacing like a novel */
+.chapter-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Chapter navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+  font-weight: 600;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+}
+
+/* Dark mode support */
+body.dark .featured h2 {
+  color: #ffd369;
+}
+
+body.dark .read-more {
+  color: #e0e0e0;
+}
+
+.countdown-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.countdown-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#countdown div {
+  background: #222;
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 90px;
+}
+
+#countdown span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+#countdown small {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.like-box {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+}
+
+.like-btn {
+  border: none;
+  background: #ffd369;
+  color: #111;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.like-btn:hover {
+  opacity: 0.85;
+}
+
+body.dark .like-btn {
+  background: #444;
+  color: #fff;
+}
+.chapter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chapter-list li {
+  margin: 12px 0;
+}
+
+.chapter-list a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dashed #aaa;
+}
+
+.chapter-list a:hover {
+  opacity: 0.7;
+}
+
+.chapter {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.chapter-nav {
+  margin-top: 30px;
+  text-align: right;
+}
+.story-meta {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+body.reading nav,
+body.reading footer {
+  display: none;
+}
+
+body.reading .chapter {
+  margin-top: 2rem;
+}
+/* ---------- STORY CARD WITH COVER ---------- */
+.story-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.story-cover {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.story-info h2 {
+  margin-top: 0;
+}
+
+.story-info a {
+  text-decoration: none;
+}
+
+.story-info a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .story-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .story-cover {
+    width: 160px;
+  }
+}
+/* ---------- BOOK COVER ---------- */
+.book-cover {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+@media (min-width: 900px) {
+  .book-cover {
+    max-width: 240px;
+  }
+}
+/* ---------- FONT SIZE CONTROLS ---------- */
+.font-controls {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.font-controls button {
+  margin: 0 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.font-controls button:hover {
+  background: #eee;
+}
+
+/* Font size modes */
+body.font-small .chapter-text {
+  font-size: 0.95rem;
+}
+
+body.font-normal .chapter-text {
+  font-size: 1.1rem;
+}
+
+body.font-large .chapter-text {
+  font-size: 1.35rem;
+}
+
+/* Dark mode support */
+body.dark .font-controls button:hover {
+  background: #222;
+}
+/* ---------- OPENING LINE SPOTLIGHT ---------- */
+.opening-line {
+  font-size: 1.35rem;
+  font-style: italic;
+  margin-bottom: 1.8rem;
+  color: #333;
+}
+
+/* Book mode enhancement */
+body.book-mode .opening-line {
+  font-size: 1.3rem;
+  color: #2a2a2a;
+}
+
+/* Book-style paragraph indentation */
+.story-content p {
+  text-indent: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1.0rem;
+}
+/* ---------- ADS
+/* Book container */
+.book {
+  max-width: 720px;     /* book width */
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Paragraphs */
+.book .para {
+  text-indent: 2em;
+  margin-bottom: 1.4em;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Headings */
+.book h2 {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.book-layout {
+  display: flex;
+  gap: 40px;
+}
+
+/* Keep content readable */
+.book {
+  max-width: 700px;
+}
+
+/* TOC stays fixed while reading */
+.toc {
+  width: 220px;
+  position: sticky;
+  top: 100px;
+}
+.logo {
+  width: 180px;
+  max-width: 60%;
+  margin-bottom: 1rem;
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.logo {
+  width: 180px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 180px;
+  }
+}
+.locked {
+  opacity: 0.5;
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+.locked-text {
+  font-style: italic;
+  text-align: center;
+}
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  z-index: 9999;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #222;
+}
+body {
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.ramadhan-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.ramadhan-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.dua {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #90ee90;
+  font-weight: bold;
+}
+
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  margin-bottom: 5px;
+}
+
+.footer-links {
+  min-width: 200px;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+                              }
+.site-footer {
+  background-color: #000;
+  color: #ddd;
+  padding: 70px 20px 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand Name */
+.footer-logo {
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+
+  /* Soft gold glow */
+  text-shadow:
+    0 0 5px rgba(212, 175, 55, 0.6),
+    0 0 10px rgba(212, 175, 55, 0.4),
+    0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Thin Glowing Gold Line */
+.gold-line {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto 20px auto;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+}
+
+/* Luxury Tagline */
+.footer-tagline {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.gold-accent {
+  color: #d4af37;
+}
+
+/* Links */
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #d4af37;
+}
+
+/* Bottom Credit */
+.footer-credit {
+  font-size: 13px;
+  color: #666;
+}
+
+@keyframes subtleGlow {
+  0% { text-shadow: 0 0 5px rgba(212,175,55,0.4); }
+  50% { text-shadow: 0 0 15px rgba(212,175,55,0.7); }
+  100% { text-shadow: 0 0 5px rgba(212,175,55,0.4); }
+}
+
+.footer-logo {
+  animation: subtleGlow 4s infinite ease-in-out;
+    }
+.footer-social {
+  margin-bottom: 30px;
+}
+
+.footer-social a {
+  color: #aaa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #d4af37;
+  }
+
+ /* EXPLORE */
+.explore {
+  padding: 60px 20px;
+  text-align: center;
+  background: #000;
+}
+
+.explore h2 {
+  color: #d4af37;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.explore-grid a {
+  border: 1px solid #d4af37;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.explore-grid a:hover {
+  background: #d4af37;
+  color: #000;
+                           }
+
+.hero {
+  background: #000;
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+}
+
+.hero-logo {
+  width: 110px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-size: 38px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.hero-tagline {
+  font-style: italic;
+  color: #d4af37;
+  font-size: 18px;
+  margin-top: 10px;
+  text-shadow: 0 0 6px rgba(212,175,55,0.5);
+}
+
+.hero-subtext {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  }
+  
+  /* BOOK HERO */
+.book-hero {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.book-title {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+.book-subtitle {
+  color: #d4af37;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.book-description {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* TABLE OF CONTENTS */
+.book-toc {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.toc-list {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.toc-item span {
+  color: #d4af37;
+}
+
+.toc-item a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+.toc-item a:hover {
+  color: #d4af37;
+}
+
+/* BOOK FOOTER */
+.book-footer {
+  text-align: center;
+  padding: 40px;
+  background: #000;
+}
+
+.book-footer a {
+  text-decoration: none;
+  color: #d4af37;
+  }
+
+/* POEM PAGE */
+
+.poem-hero {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.poem-title {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 15px auto;
+}
+
+.poem-subtitle {
+  color: #d4af37;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.poem-content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.9;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.poem-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.poem-navigation a {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+  }
