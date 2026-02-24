@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAFE HEAVEN</title>
+  <meta name="description" content="This is a love story. ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="poems.html">Poems</a>
+  <a href="bible.html">Bible</a>
+  <a href="about.html">About</a>
+  
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+
+</nav>
+
+<main>
+  <a href="stories.html" class="back-link">← Back to Stories</a>
+
+  <article class="card">
+    <h1>SAFE HEAVEN</h1>
+    <p><em>Romance 
+</em></p>
+    <p><em>By Hunter</em></p>
+    <p>Coming Soon</p>
+  
+>
+    <p>
+      ******
+    </p>
+  </article>
+
+  <article class="card">
+  <h2>Chapters</h2>
+
+  <ul class="chapter-list">
+    <li>
+      <a href="chapters/safe-heaven-ch1.html">
+        Chapter One — 
+      </a>
+    </li>
+
+    <li>
+      <a href="chapters/safe-heavench2.html">
+        Chapter Two — 
+      </a>
+    </li>
+
+    </li>
+  </ul>
+</article>
+
+<div class="like-box">
+  <button class="like-btn" onclick="toggleLike()">❤️ Like</button>
+  <span id="like-count">0</span> likes
+</div>
+
+</main>
+<script>
+  let liked = false;
+  let count = localStorage.getItem("counting-dead-likes") || 0;
+
+  const countEl = document.getElementById("like-count");
+  countEl.textContent = count;
+
+  function toggleLike() {
+    liked = !liked;
+
+    if (liked) {
+      count++;
+    } else {
+      count--;
+    }
+
+    localStorage.setItem("counting-dead-likes", count);
+    countEl.textContent = count;
+  }
+</script>
+
+</body>
+</html>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
