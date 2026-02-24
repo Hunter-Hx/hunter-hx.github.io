@@ -1177,3 +1177,40 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid #222;
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 1000;
+  padding: 15px 20px;
+  border-bottom: 1px solid #111;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.brand-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.brand-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  }
