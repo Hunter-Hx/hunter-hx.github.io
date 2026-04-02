@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter Eleven— CHAINS OF COMMAND</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="../stories.html">Stories</a>
+  <a href="../story-counting-the-dead.html">Back to Novel</a>
+</nav>
+
+<main>
+  <article class="card chapter">
+    <h1>Chapter Eleven</h1>
+    <h3>Names Wes</h3>
+    <p class="story-meta">
+  Fiction • 5 min read • Updated Apr 2026
+</p>
+<button class="read-mode-btn" onclick="toggleReadMode()">
+  📖 Reading Mode
+</button>
+
+
+    <p>
+      My name is Jackline. Jackline Akinyi. My brother calls me Akinyi. He loves that name and I love it too. I’m 14 years old. My only brother is scheduled to die in six days. I can do so little to delay or even cancel his execution. I must try to make sure they don’t kill my only brother. I love him and if they kill him, they kill me. He has always been my joy giver. He’s teasing but smart. He calls me the comedian of the family.
+I time to fall in love.
+
+
+    </p>
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chains-of-command-ch10.html"> ← Previous Chapter </a>
+    <a href="chains-of-command-ch12.html">Next Chapter →</a>
+  </div>
+</main>
+<script>
+function toggleReadMode() {
+  document.body.classList.toggle("reading");
+}
+</script>
+<script>
+  const unlocked = false;
+
+  if (!unlocked) {
+    document.body.innerHTML = `
+      <main style="text-align:center; margin-top:100px;">
+        <h1>🔒 Chapter Locked</h1>
+        <p>This chapter will be released Soon</p>
+        <a href=stories.html
+      </main>
+    `;
+  }
+</script>
+
+</body>
+</html>
