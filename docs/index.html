@@ -371,6 +371,117 @@ function closeMenu() {
   document.getElementById("overlay").classList.remove("show");
 }
   </script>
+  <script>
+/* =========================================
+   LAMP SWIPE
+   ========================================= */
+
+document.body.classList.add("lamp-locked");
+
+const lampIntro = document.getElementById("lamp-intro");
+const lampPull = document.getElementById("lamp-pull");
+
+let startY = null;
+let finished = false;
+
+const swipeDistance = 60;
+
+
+/* Start dragging */
+
+lampPull.addEventListener("pointerdown", function(e) {
+
+  if (finished) return;
+
+  startY = e.clientY;
+
+  lampPull.setPointerCapture(e.pointerId);
+
+});
+
+
+/* While dragging */
+
+lampPull.addEventListener("pointermove", function(e) {
+
+  if (startY === null || finished) return;
+
+  const distance =
+    e.clientY - startY;
+
+  if (distance > 0) {
+
+    const movement =
+      Math.min(distance, 80);
+
+    lampPull.style.transform =
+      `translateX(-50%) translateY(${movement}px)`;
+
+  }
+
+  /* Turn light on */
+
+  if (distance >= swipeDistance) {
+
+    turnLightOn();
+
+  }
+
+});
+
+
+/* Release */
+
+lampPull.addEventListener("pointerup", function() {
+
+  if (!finished) {
+
+    lampPull.style.transform =
+      "translateX(-50%)";
+
+  }
+
+  startY = null;
+
+});
+
+
+/* =========================================
+   TURN LIGHT ON
+   ========================================= */
+
+function turnLightOn() {
+
+  if (finished) return;
+
+  finished = true;
+
+  lampIntro.classList.add("light-on");
+
+
+  /* Wait for light to fill screen */
+
+  setTimeout(function() {
+
+    lampIntro.classList.add("hide");
+
+    document.body.classList.remove(
+      "lamp-locked"
+    );
+
+  }, 1200);
+
+
+  /* Remove intro completely */
+
+  setTimeout(function() {
+
+    lampIntro.remove();
+
+  }, 2300);
+
+}
+</script>
 </body>
 </html>
 <script>
