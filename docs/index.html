@@ -276,102 +276,7 @@
     });
   });
 </script>
-
-</body>
-  <!-- Cookie Notice -->
-<div id="cookie-notice" class="cookie-notice">
-  <p>
-    This website uses cookies to improve your experience.
-    <a href="privacy.html">Learn more</a>
-  </p>
-  <button id="accept-cookies">Accept</button>
-</div>
-
-<div class="ad-placeholder">
-  <p>Advertisement</p>
-</div>
-  <script>
-  const quotes = [
-    { text: "Let the kite perch and let the eagle perch too – If one says no to the other, let his wing break" , author: "Chinua Achebe" },
-    { text: "If you don't like someone's story, write your own" ,author: "Chinua Achebe" },
-    { text: "As long as the bed shakes regularly, the home is at peace" , author: "Chinua Achebe" },
-    { text: "The best way to keep a prisoner from escaping is to make sure he never knows he's in prison." , author: "Fyodor Dostoevsky" },
-    { text: "If you want to overcome the whole world, overcome yourself." , author: "Fyodor Dostoevsky" },
-    { text: "My God, a moment of bliss. Why, isn't that enough for a whole lifetime?." , author:"Fyodor Dostoevsky"},
-    { text: "But how could you live and have no story to tell?." , author: "Fyodor Dostoevsky"},
-    { text: "And I do nothing, hoping that at last i shall meet someone." , author: "Fyodor Dostoevsky"},
-       ];
-
-  const today = new Date().getDate();
-  const quote = quotes[today % quotes.length];
-
-  document.getElementById("quote-text").textContent = `"${quote.text}"`;
-  document.getElementById("quote-author").textContent = `— ${quote.author}`;
-</script>
-  
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const facts = [
-      "The human brain uses about 20% of the body's total energy.",
-      "Did you know that lemons do not occur naturally in the wild? They are a human-cultivated hybrd, resulting from a cross between a citron and a bitter orange,",
-      "Sudan has more pyramids than Egypt.",
-      "The tallest mountain in the world is Mauna Kea and not Everest. This is because Mount Everest is considered the highest mountain in the world when measuring height above sea level, with an impressive 8,848.86 meters. However, the true giant is Mauna Kea in Hawaii. From its base on the ocean floor to its summit, it measures an astonishing 10,210 meters, surpassing Everest by almost 1,400 meters.",
-    ];
-
-    const today = new Date();
-    const index = today.getDate() % facts.length;
-
-    document.getElementById("daily-fact").textContent = facts[index];
-  });
-</script>
-<script>
-  // SET YOUR LAUNCH DATE HERE (YYYY-MM-DD)
-  const launchDate = new Date("2026-02-01T20:00:00").getTime();
-
-  const countdown = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = launchDate - now;
-
-    if (distance < 0) {
-      clearInterval(countdown
-      document.querySelector().innerHTML =
-        "<h2>🎉 We Are Live!</h2>";
-      return;
-    }
-
-    document.getElementById("days").textContent =
-      Math.floor(distance / (1000 * 60 * 60 * 24));
-    document.getElementById("hours").textContent =
-      Math.floor((distance / (1000 * 60 * 60)) % 24);
-    document.getElementById("minutes").textContent =
-      Math.floor((distance / (1000 * 60)) % 60);
-    document.getElementById("seconds").textContent =
-      Math.floor((distance / 1000) % 60);
-  }, 1000);
-</script>
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  if (menu.style.display === "flex") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "flex";
-  }
-}
-</script>
-  <script>
-function openMenu() {
-  document.getElementById("sideMenu").classList.add("open");
-  document.getElementById("overlay").classList.add("show");
-}
-
-function closeMenu() {
-  document.getElementById("sideMenu").classList.remove("open");
-  document.getElementById("overlay").classList.remove("show");
-}
-  </script>
-  <script>
 /* =========================================
    LAMP SWIPE
    ========================================= */
@@ -482,6 +387,101 @@ function turnLightOn() {
 
 }
 </script>
+</body>
+  <!-- Cookie Notice -->
+<div id="cookie-notice" class="cookie-notice">
+  <p>
+    This website uses cookies to improve your experience.
+    <a href="privacy.html">Learn more</a>
+  </p>
+  <button id="accept-cookies">Accept</button>
+</div>
+
+<div class="ad-placeholder">
+  <p>Advertisement</p>
+</div>
+  <script>
+  const quotes = [
+    { text: "Let the kite perch and let the eagle perch too – If one says no to the other, let his wing break" , author: "Chinua Achebe" },
+    { text: "If you don't like someone's story, write your own" ,author: "Chinua Achebe" },
+    { text: "As long as the bed shakes regularly, the home is at peace" , author: "Chinua Achebe" },
+    { text: "The best way to keep a prisoner from escaping is to make sure he never knows he's in prison." , author: "Fyodor Dostoevsky" },
+    { text: "If you want to overcome the whole world, overcome yourself." , author: "Fyodor Dostoevsky" },
+    { text: "My God, a moment of bliss. Why, isn't that enough for a whole lifetime?." , author:"Fyodor Dostoevsky"},
+    { text: "But how could you live and have no story to tell?." , author: "Fyodor Dostoevsky"},
+    { text: "And I do nothing, hoping that at last i shall meet someone." , author: "Fyodor Dostoevsky"},
+       ];
+
+  const today = new Date().getDate();
+  const quote = quotes[today % quotes.length];
+
+  document.getElementById("quote-text").textContent = `"${quote.text}"`;
+  document.getElementById("quote-author").textContent = `— ${quote.author}`;
+</script>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const facts = [
+      "The human brain uses about 20% of the body's total energy.",
+      "Did you know that lemons do not occur naturally in the wild? They are a human-cultivated hybrd, resulting from a cross between a citron and a bitter orange,",
+      "Sudan has more pyramids than Egypt.",
+      "The tallest mountain in the world is Mauna Kea and not Everest. This is because Mount Everest is considered the highest mountain in the world when measuring height above sea level, with an impressive 8,848.86 meters. However, the true giant is Mauna Kea in Hawaii. From its base on the ocean floor to its summit, it measures an astonishing 10,210 meters, surpassing Everest by almost 1,400 meters.",
+    ];
+
+    const today = new Date();
+    const index = today.getDate() % facts.length;
+
+    document.getElementById("daily-fact").textContent = facts[index];
+  });
+</script>
+<script>
+  // SET YOUR LAUNCH DATE HERE (YYYY-MM-DD)
+  const launchDate = new Date("2026-02-01T20:00:00").getTime();
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    if (distance < 0) {
+      clearInterval(countdown
+      document.querySelector().innerHTML =
+        "<h2>🎉 We Are Live!</h2>";
+      return;
+    }
+
+    document.getElementById("days").textContent =
+      Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").textContent =
+      Math.floor((distance / (1000 * 60 * 60)) % 24);
+    document.getElementById("minutes").textContent =
+      Math.floor((distance / (1000 * 60)) % 60);
+    document.getElementById("seconds").textContent =
+      Math.floor((distance / 1000) % 60);
+  }, 1000);
+</script>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+  <script>
+function openMenu() {
+  document.getElementById("sideMenu").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
+}
+  </script>
+  
 </body>
 </html>
 <script>
